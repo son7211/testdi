@@ -56,8 +56,8 @@ jobs:
     #    java-version: 1.8
     
     - name: testbuildfollow
-      run : make 
-      working-directory : ./app/src/main/jni
+      run : ./app/src/main/jni/make 
+    #  working-directory : ./app/src/main/jni
       
       
     
