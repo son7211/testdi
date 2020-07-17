@@ -57,7 +57,7 @@ jobs:
     
     - name: testbuildfollow
       run : make 
-      working-directory : ./app/src/main/jin/
+      working-directory : ./app/src/main/jin
       
       
     
