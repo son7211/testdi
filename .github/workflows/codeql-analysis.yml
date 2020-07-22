@@ -71,5 +71,5 @@ jobs:
        uses: actions/upload-artifact@v2
        with:
           name: sarif-results
-          path: /home/runner/work/codeql-demo-struts-CVE-2017-9805/results/
+          path: /home/runner/work/
 
