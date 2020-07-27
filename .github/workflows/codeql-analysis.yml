@@ -66,6 +66,13 @@ jobs:
 
      - name: Perform CodeQL Analysis
        uses: github/codeql-action/analyze@v1
+     
+     - name: Send webhook
+       uses: distributhor/workflow-webhook@v1
+       env:
+        webhook_url: ${{ secrets.WEBHOOK_URL }}
+        # webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
+        data: '{ "Analysis": "Completed" }'
 
     # - name: Upload SARIF results as artifacts
     #   uses: actions/upload-artifact@v2
